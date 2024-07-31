@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
-  <TalendProperties:Project xmi:id="_K8s6QUuEEe-fXrmSrZmAaQ" label="PublicProject" description="" language="java" technicalLabel="PUBLICPROJECT" author="_K8s6QkuEEe-fXrmSrZmAaQ" productVersion="Talend Data Fabric-8.0.1.20231017_1026-patch" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/salgur/test.git&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DI" itemsRelationVersion="1.3">
+  <TalendProperties:Project xmi:id="_K8s6QUuEEe-fXrmSrZmAaQ" label="PublicProject" description="" language="java" technicalLabel="PUBLICPROJECT" author="_K8s6QkuEEe-fXrmSrZmAaQ" productVersion="Talend Data Fabric-8.0.1.20240718_0800-patch" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/salgur/test.git&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DI" itemsRelationVersion="1.3">
     <migrationTask xmi:id="_K-lJkEuEEe-fXrmSrZmAaQ" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
   </TalendProperties:Project>
   <TalendProperties:User xmi:id="_K8s6QkuEEe-fXrmSrZmAaQ" login="admin@company.com" firstName="admin" lastName="admin" type="DQ" additionnalData="{}"/>
   <TalendProperties:User xmi:id="_LjHaAEuEEe-fXrmSrZmAaQ" login="dev1@company.com" firstName="dev1" lastName="dev1" type="DI" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_Wj_wME83Ee-L74skGL0rRQ" login="dev2@company.com" firstName="dev2" lastName="dev2" type="DI" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_Wj_wMU83Ee-L74skGL0rRQ" login="operator@company.com" firstName="operator" lastName="operator" type="DQ" additionnalData="{}"/>
 </xmi:XMI>
