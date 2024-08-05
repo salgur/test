@@ -1,0 +1,60 @@
+{
+  "itemId" : "_uimTIEQaEe-O8rOvOIecwQ",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_OiEuoMGPEeyHrfOgvNwRHg",
+    "parameterList" : [ {
+      "id" : "_Nv6BWZzYEeus1vVl1E2V5A",
+      "name" : "contextSeedPath"
+    }, {
+      "id" : "_Nv6BUpzYEeus1vVl1E2V5A",
+      "name" : "contextStorageType"
+    }, {
+      "id" : "_Nv6BVJzYEeus1vVl1E2V5A",
+      "name" : "enableJobLevelContextFileLoad"
+    }, {
+      "id" : "_Nv6BU5zYEeus1vVl1E2V5A",
+      "name" : "enableProjectLevelContextFileLoad"
+    }, {
+      "id" : "_Nv6BVZzYEeus1vVl1E2V5A",
+      "name" : "enableTaskLevelContextFileLoad"
+    }, {
+      "id" : "_Nv6BW5zYEeus1vVl1E2V5A",
+      "name" : "environment"
+    }, {
+      "id" : "_Nv6BWpzYEeus1vVl1E2V5A",
+      "name" : "loadContextInJob"
+    }, {
+      "id" : "_Nv6BV5zYEeus1vVl1E2V5A",
+      "name" : "printContextVariableValues"
+    }, {
+      "id" : "_Nv6BUZzYEeus1vVl1E2V5A",
+      "name" : "resource_directory_contextFiles"
+    }, {
+      "id" : "_Nv6BVpzYEeus1vVl1E2V5A",
+      "name" : "taskName"
+    }, {
+      "id" : "_Nv6BWJzYEeus1vVl1E2V5A",
+      "name" : "tMapTempDirPath"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_QQelMEQqEe-_yICSNNB7sg",
+    "parameterList" : [ {
+      "id" : "_WLuboEQqEe-_yICSNNB7sg",
+      "name" : "FILE_NAME"
+    }, {
+      "id" : "_WLvCskQqEe-_yICSNNB7sg",
+      "name" : "MPA_ArchiveFilePath"
+    }, {
+      "id" : "_WLvCsUQqEe-_yICSNNB7sg",
+      "name" : "MPA_ErrorFilePath"
+    }, {
+      "id" : "_WLvCs0QqEe-_yICSNNB7sg",
+      "name" : "MPA_Source_file_pattern"
+    }, {
+      "id" : "_WLvCsEQqEe-_yICSNNB7sg",
+      "name" : "MPA_SourceFilePath"
+    } ]
+  } ]
+}

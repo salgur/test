@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties" xmlns:model="http://www.talend.com/joblet.ecore" xmi:version="2.0">
+  <model:JobletProcess defaultContext="Default" jobType="Standard">
+    <context confirmationNeeded="false" name="Default">
+      <contextParameter comment="Location of the encryption key" internalId="_nBOUkJzYEeus1vVl1E2V5A" name="contextSeedPath" prompt="contextSeedPath?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_String" value="&quot;/app/talend/.ssh&quot;"/>
+      <contextParameter comment="Context Storage Type to read from" internalId="_nBOUkZzYEeus1vVl1E2V5A" name="contextStorageType" prompt="contextStorageType?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_String" value="&quot;File&quot;"/>
+      <contextParameter comment="Load Job Level Context File" internalId="_nBOUkpzYEeus1vVl1E2V5A" name="enableJobLevelContextFileLoad" prompt="enableJobLevelContextFileLoad?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_Boolean" value="true"/>
+      <contextParameter comment="Load Project Level Context File" internalId="_nBOUk5zYEeus1vVl1E2V5A" name="enableProjectLevelContextFileLoad" prompt="enableProjectLevelContextFileLoad?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_Boolean" value="true"/>
+      <contextParameter comment="Load Task Level Context File" internalId="_nBOUlJzYEeus1vVl1E2V5A" name="enableTaskLevelContextFileLoad" prompt="enableTaskLevelContextFileLoad?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_Boolean" value="false"/>
+      <contextParameter comment="Environment parameter that can be leveraged to drive different logic based on execution environment" internalId="_nBOUlZzYEeus1vVl1E2V5A" name="environment" prompt="environment?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_String" value="&quot;local&quot;"/>
+      <contextParameter comment="Flag to set to load context variables in Job.  This is handy if there are child jobs and we do not want child jobs to load the context values again, but instead use the values from the parent job. Default Value is true and then overridden to false at the end of the first context load" internalId="_nBOUlpzYEeus1vVl1E2V5A" name="loadContextInJob" prompt="loadContextInJob?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_Boolean" value="true"/>
+      <contextParameter comment="Print Context Variable Values (Password always hidden by default)" internalId="_nBOUl5zYEeus1vVl1E2V5A" name="printContextVariableValues" prompt="printContextVariableValues?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_Boolean" value="true"/>
+      <contextParameter comment="Location of Context Files (Local or Cloud Engine or Remote Engine)" internalId="_nBOUmJzYEeus1vVl1E2V5A" name="resource_directory_contextFiles" prompt="resource_directory_contextFiles?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_String" value="&quot;/app/talend/contextfiles/&quot;"/>
+      <contextParameter comment="Task Name or Id for loading Context File" internalId="_nBOUmZzYEeus1vVl1E2V5A" name="taskName" prompt="taskName?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_String" value=""/>
+      <contextParameter comment="Allocate the directory path to hold temporary file for tMap disk mode" internalId="_nBOUmpzYEeus1vVl1E2V5A" name="tMapTempDirPath" prompt="tMapTempDirPath?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_String" value="&quot;/app/talend/tmap&quot;"/>
+    </context>
+    <context confirmationNeeded="false" name="Test">
+      <contextParameter comment="Location of the encryption key" internalId="_nBOUm5zYEeus1vVl1E2V5A" name="contextSeedPath" prompt="contextSeedPath?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_String" value="&quot;/app/talend/.ssh&quot;"/>
+      <contextParameter comment="Context Storage Type to read from" internalId="_nBOUnJzYEeus1vVl1E2V5A" name="contextStorageType" prompt="contextStorageType?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_String" value="&quot;File&quot;"/>
+      <contextParameter comment="Load Job Level Context File" internalId="_nBOUnZzYEeus1vVl1E2V5A" name="enableJobLevelContextFileLoad" prompt="enableJobLevelContextFileLoad?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_Boolean" value="true"/>
+      <contextParameter comment="Load Project Level Context File" internalId="_nBOUnpzYEeus1vVl1E2V5A" name="enableProjectLevelContextFileLoad" prompt="enableProjectLevelContextFileLoad?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_Boolean" value="true"/>
+      <contextParameter comment="Load Task Level Context File" internalId="_nBOUn5zYEeus1vVl1E2V5A" name="enableTaskLevelContextFileLoad" prompt="enableTaskLevelContextFileLoad?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_Boolean" value="false"/>
+      <contextParameter comment="Environment parameter that can be leveraged to drive different logic based on execution environment" internalId="_nBOUoJzYEeus1vVl1E2V5A" name="environment" prompt="environment?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_String" value="&quot;test&quot;"/>
+      <contextParameter comment="Flag to set to load context variables in Job.  This is handy if there are child jobs and we do not want child jobs to load the context values again, but instead use the values from the parent job. Default Value is true and then overridden to false at the end of the first context load" internalId="_nBOUoZzYEeus1vVl1E2V5A" name="loadContextInJob" prompt="loadContextInJob?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_Boolean" value="true"/>
+      <contextParameter comment="Print Context Variable Values (Password always hidden by default)" internalId="_nBOUopzYEeus1vVl1E2V5A" name="printContextVariableValues" prompt="printContextVariableValues?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_Boolean" value="false"/>
+      <contextParameter comment="Location of Context Files (Local or Cloud Engine or Remote Engine)" internalId="_nBOUo5zYEeus1vVl1E2V5A" name="resource_directory_contextFiles" prompt="resource_directory_contextFiles?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_String" value="&quot;/app/talend/contextfiles/&quot;"/>
+      <contextParameter comment="Task Name or Id for loading Context File" internalId="_nBOUpJzYEeus1vVl1E2V5A" name="taskName" prompt="taskName?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_String" value=""/>
+      <contextParameter comment="Allocate the directory path to hold temporary file for tMap disk mode" internalId="_nBOUpZzYEeus1vVl1E2V5A" name="tMapTempDirPath" prompt="tMapTempDirPath?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_String" value="&quot;/app/talend/tmap&quot;"/>
+    </context>
+    <context confirmationNeeded="false" name="Production">
+      <contextParameter comment="Location of the encryption key" internalId="_nBOUppzYEeus1vVl1E2V5A" name="contextSeedPath" prompt="contextSeedPath?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_String" value="&quot;/app/talend/.ssh&quot;"/>
+      <contextParameter comment="Context Storage Type to read from" internalId="_nBOUp5zYEeus1vVl1E2V5A" name="contextStorageType" prompt="contextStorageType?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_String" value="&quot;File&quot;"/>
+      <contextParameter comment="Load Job Level Context File" internalId="_nBOUqJzYEeus1vVl1E2V5A" name="enableJobLevelContextFileLoad" prompt="enableJobLevelContextFileLoad?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_Boolean" value="true"/>
+      <contextParameter comment="Load Project Level Context File" internalId="_nBOUqZzYEeus1vVl1E2V5A" name="enableProjectLevelContextFileLoad" prompt="enableProjectLevelContextFileLoad?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_Boolean" value="true"/>
+      <contextParameter comment="Load Task Level Context File" internalId="_nBOUqpzYEeus1vVl1E2V5A" name="enableTaskLevelContextFileLoad" prompt="enableTaskLevelContextFileLoad?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_Boolean" value="false"/>
+      <contextParameter comment="Environment parameter that can be leveraged to drive different logic based on execution environment" internalId="_nBOUq5zYEeus1vVl1E2V5A" name="environment" prompt="environment?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_String" value="&quot;prod&quot;"/>
+      <contextParameter comment="Flag to set to load context variables in Job.  This is handy if there are child jobs and we do not want child jobs to load the context values again, but instead use the values from the parent job. Default Value is true and then overridden to false at the end of the first context load" internalId="_nBOUrJzYEeus1vVl1E2V5A" name="loadContextInJob" prompt="loadContextInJob?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_Boolean" value="true"/>
+      <contextParameter comment="Print Context Variable Values (Password always hidden by default)" internalId="_nBOUrZzYEeus1vVl1E2V5A" name="printContextVariableValues" prompt="printContextVariableValues?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_Boolean" value="false"/>
+      <contextParameter comment="Location of Context Files (Local or Cloud Engine or Remote Engine)" internalId="_nBOUrpzYEeus1vVl1E2V5A" name="resource_directory_contextFiles" prompt="resource_directory_contextFiles?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_String" value="&quot;/app/talend/contextfiles/&quot;"/>
+      <contextParameter comment="Task Name or Id for loading Context File" internalId="_nBOUr5zYEeus1vVl1E2V5A" name="taskName" prompt="taskName?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_String" value=""/>
+      <contextParameter comment="Allocate the directory path to hold temporary file for tMap disk mode" internalId="_nBOUsJzYEeus1vVl1E2V5A" name="tMapTempDirPath" prompt="tMapTempDirPath?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_String" value="&quot;/app/talend/tmap&quot;"/>
+    </context>
+    <context confirmationNeeded="false" name="Development">
+      <contextParameter comment="Location of the encryption key" internalId="_nBOUsZzYEeus1vVl1E2V5A" name="contextSeedPath" prompt="contextSeedPath?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_String" value="&quot;/app/talend/.ssh&quot;"/>
+      <contextParameter comment="Context Storage Type to read from" internalId="_nBOUspzYEeus1vVl1E2V5A" name="contextStorageType" prompt="contextStorageType?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_String" value="&quot;File&quot;"/>
+      <contextParameter comment="Load Job Level Context File" internalId="_nBOUs5zYEeus1vVl1E2V5A" name="enableJobLevelContextFileLoad" prompt="enableJobLevelContextFileLoad?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_Boolean" value="true"/>
+      <contextParameter comment="Load Project Level Context File" internalId="_nBOUtJzYEeus1vVl1E2V5A" name="enableProjectLevelContextFileLoad" prompt="enableProjectLevelContextFileLoad?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_Boolean" value="true"/>
+      <contextParameter comment="Load Task Level Context File" internalId="_nBOUtZzYEeus1vVl1E2V5A" name="enableTaskLevelContextFileLoad" prompt="enableTaskLevelContextFileLoad?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_Boolean" value="false"/>
+      <contextParameter comment="Environment parameter that can be leveraged to drive different logic based on execution environment" internalId="_nBOUtpzYEeus1vVl1E2V5A" name="environment" prompt="environment?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_String" value="&quot;dev&quot;"/>
+      <contextParameter comment="Flag to set to load context variables in Job.  This is handy if there are child jobs and we do not want child jobs to load the context values again, but instead use the values from the parent job. Default Value is true and then overridden to false at the end of the first context load" internalId="_nBOUt5zYEeus1vVl1E2V5A" name="loadContextInJob" prompt="loadContextInJob?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_Boolean" value="true"/>
+      <contextParameter comment="Print Context Variable Values (Password always hidden by default)" internalId="_nBOUuJzYEeus1vVl1E2V5A" name="printContextVariableValues" prompt="printContextVariableValues?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_Boolean" value="false"/>
+      <contextParameter comment="Location of Context Files (Local or Cloud Engine or Remote Engine)" internalId="_nBOUuZzYEeus1vVl1E2V5A" name="resource_directory_contextFiles" prompt="resource_directory_contextFiles?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_String" value="&quot;/app/talend/contextfiles/&quot;"/>
+      <contextParameter comment="Task Name or Id for loading Context File" internalId="_nBOUupzYEeus1vVl1E2V5A" name="taskName" prompt="taskName?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_String" value=""/>
+      <contextParameter comment="Allocate the directory path to hold temporary file for tMap disk mode" internalId="_nBOUu5zYEeus1vVl1E2V5A" name="tMapTempDirPath" prompt="tMapTempDirPath?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_String" value="&quot;/app/talend/tmap&quot;"/>
+    </context>
+    <context confirmationNeeded="false" name="Perf">
+      <contextParameter comment="Location of the encryption key" internalId="_nBOUvJzYEeus1vVl1E2V5A" name="contextSeedPath" prompt="contextSeedPath?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_String" value="&quot;/app/talend/.ssh&quot;"/>
+      <contextParameter comment="Context Storage Type to read from" internalId="_nBOUvZzYEeus1vVl1E2V5A" name="contextStorageType" prompt="contextStorageType?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_String" value="&quot;File&quot;"/>
+      <contextParameter comment="Load Job Level Context File" internalId="_nBOUvpzYEeus1vVl1E2V5A" name="enableJobLevelContextFileLoad" prompt="enableJobLevelContextFileLoad?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_Boolean" value="true"/>
+      <contextParameter comment="Load Project Level Context File" internalId="_nBOUv5zYEeus1vVl1E2V5A" name="enableProjectLevelContextFileLoad" prompt="enableProjectLevelContextFileLoad?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_Boolean" value="true"/>
+      <contextParameter comment="Load Task Level Context File" internalId="_nBOUwJzYEeus1vVl1E2V5A" name="enableTaskLevelContextFileLoad" prompt="enableTaskLevelContextFileLoad?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_Boolean" value="false"/>
+      <contextParameter comment="Environment parameter that can be leveraged to drive different logic based on execution environment" internalId="_nBOUwZzYEeus1vVl1E2V5A" name="environment" prompt="environment?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_String" value="&quot;perf&quot;"/>
+      <contextParameter comment="Flag to set to load context variables in Job.  This is handy if there are child jobs and we do not want child jobs to load the context values again, but instead use the values from the parent job. Default Value is true and then overridden to false at the end of the first context load" internalId="_nBOUwpzYEeus1vVl1E2V5A" name="loadContextInJob" prompt="loadContextInJob?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_Boolean" value="true"/>
+      <contextParameter comment="Print Context Variable Values (Password always hidden by default)" internalId="_nBOUw5zYEeus1vVl1E2V5A" name="printContextVariableValues" prompt="printContextVariableValues?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_Boolean" value="false"/>
+      <contextParameter comment="Location of Context Files (Local or Cloud Engine or Remote Engine)" internalId="_nBOUxJzYEeus1vVl1E2V5A" name="resource_directory_contextFiles" prompt="resource_directory_contextFiles?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_String" value="&quot;/app/talend/contextfiles/&quot;"/>
+      <contextParameter comment="Task Name or Id for loading Context File" internalId="_nBOUxZzYEeus1vVl1E2V5A" name="taskName" prompt="taskName?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_String" value=""/>
+      <contextParameter comment="Allocate the directory path to hold temporary file for tMap disk mode" internalId="_nBOUxpzYEeus1vVl1E2V5A" name="tMapTempDirPath" prompt="tMapTempDirPath?" promptNeeded="false" repositoryContextId="_NvoUgJzYEeus1vVl1E2V5A" type="id_String" value="&quot;/app/talend/tmap&quot;"/>
+    </context>
+    <parameters>
+      <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+      <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+      <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" show="false" value="false"/>
+      <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" show="false" value="25000"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true"/>
+      <elementParameter field="ICON_SELECTION" name="ICONSELECTION" value=""/>
+      <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" show="false" value="false"/>
+      <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+      <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+      <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;/Users/ntabjula/Talend/context_workspace/in.csv&quot;"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;;&quot;"/>
+      <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+      <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+      <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+      <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value="ORACLE_12"/>
+      <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+      <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:pFf/C34MFzBbCRgtxnqKx44DkMOrV9mkpUXsMYyY"/>
+      <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+      <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+      <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+      <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="true"/>
+      <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="true"/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+      <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+      <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+      <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+      <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+      <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+      <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+      <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+      <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+      <routinesParameter id="_WtjFMJp8Eeuqi7twOWGy7A" name="DataOperation"/>
+      <routinesParameter id="_WttdQJp8Eeuqi7twOWGy7A" name="Mathematical"/>
+      <routinesParameter id="_WtbwcJp8Eeuqi7twOWGy7A" name="Numeric"/>
+      <routinesParameter id="_WtokwJp8Eeuqi7twOWGy7A" name="Relational"/>
+      <routinesParameter id="_WtvScJp8Eeuqi7twOWGy7A" name="SQLike"/>
+      <routinesParameter id="_WtrBAJp8Eeuqi7twOWGy7A" name="StringHandling"/>
+      <routinesParameter id="_WrxjkJp8Eeuqi7twOWGy7A" name="TalendDataGenerator"/>
+      <routinesParameter id="_WtlhcJp8Eeuqi7twOWGy7A" name="TalendDate"/>
+      <routinesParameter id="_Wtgo8Jp8Eeuqi7twOWGy7A" name="TalendStringUtil"/>
+      <routinesParameter id="_WteMsJp8Eeuqi7twOWGy7A" name="TalendString"/>
+      <routinesParameter id="_ae2UsMC5Eee60dwdMnb2VQ" name="routine_Encryption"/>
+    </parameters>
+    <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="384">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+      <elementParameter field="MEMO_JAVA" name="CODE" value=""/>
+      <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+      <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;Context Load check&lt;/b&gt;&lt;br&gt;"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tJava_1"/>
+    </node>
+    <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="384">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_2"/>
+      <elementParameter field="MEMO_JAVA" name="CODE" value="/* This code makes sure that context.contextStorageType will always contain a value of type File.  If there is a user error and it is not&#10; * File or DB, then this code resets the value to File&#10; * Default Value is always File if a wrong value is entered&#10; */&#10;&#10;if (context.contextStorageType!=null)&#10;{&#10;&#9;context.contextStorageType = context.contextStorageType.trim();&#10;}&#10;else&#10;{&#10;&#9;context.contextStorageType = &quot;File&quot;;&#10;}&#10;&#10;if (!(context.contextStorageType.equals(&quot;File&quot;)||context.contextStorageType.equals(&quot;DB&quot;)))&#10;{&#10;&#9;context.contextStorageType = &quot;File&quot;;&#10;}&#10;&#10;&#10;/* This code initializes the TalendEncryption encryptor with the secret key to use to encrypt or decrupt&#10; * &#10; * &#10; &#10; &#10;String encryptionFilePath = context.resource_directory_contextFiles + &quot;/encryption.properties&quot;;&#10;try{&#10;&#9;if (context.environment.trim().length()&gt;0)&#10;&#9;{&#10;&#9;&#9;encryptionFilePath = context.resource_directory_contextFiles + &quot;/&quot; + context.environment.trim() +&quot;/encryption.properties&quot;;&#10;&#9;}&#10;&#9;&#10;&#9;TalendEncryption.initialize(encryptionFilePath);&#10;&#10;} catch (Exception e) {&#10;&#9;e.printStackTrace();&#10;&#9;log.error(e.toString());&#10;&#9;log.warn(&quot;Failed to load Secret from file &quot; + encryptionFilePath + &quot;! - Proceeding with default seed for encryptor&quot;);&#10;}*/"/>
+      <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+      <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;Mandatory Value check&lt;/b&gt;&lt;br&gt;"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tJava_2"/>
+    </node>
+    <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="576">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_3"/>
+      <elementParameter field="MEMO_JAVA" name="CODE" value=""/>
+      <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+      <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;Step File Load&lt;/b&gt;&lt;br&gt;"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tJava_3"/>
+    </node>
+    <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="768">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_4"/>
+      <elementParameter field="MEMO_JAVA" name="CODE" value=""/>
+      <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+      <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;Step Print Context&lt;/b&gt;&lt;br&gt;"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tJava_4"/>
+    </node>
+    <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="576">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_1"/>
+      <elementParameter field="TEXT" name="MESSAGE" value="&quot;Context Management - Loading Context From Files...&quot;"/>
+      <elementParameter field="TEXT" name="CODE" value="42"/>
+      <elementParameter field="CLOSED_LIST" name="PRIORITY" value="4"/>
+      <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;File Load&lt;/b&gt;&lt;br&gt;"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tWarn_1"/>
+    </node>
+    <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="768">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_2"/>
+      <elementParameter field="TEXT" name="MESSAGE" value="&quot;Context Management - Printing Context Variable Values... &quot;"/>
+      <elementParameter field="TEXT" name="CODE" value="42"/>
+      <elementParameter field="CLOSED_LIST" name="PRIORITY" value="4"/>
+      <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;Print Context Variables&lt;/b&gt;&lt;br&gt;"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tWarn_2"/>
+    </node>
+    <node componentName="LoadContextFromFile" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="576">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="LoadContextFromFile_1"/>
+      <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+      <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+      <elementParameter field="CHECK" name="DUMMY" show="false" value="false"/>
+      <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+      <elementParameter field="CHECK" name="START" show="false" value="false"/>
+      <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+      <elementParameter field="CLOSED_LIST" name="TRIGGER_INPUT_1" value="SUBJOB_OK"/>
+      <elementParameter field="COMPONENT_LIST" name="TRIGGER_INPUT_1:COMPONENT_LIST" value="tWarn_1"/>
+      <elementParameter field="TEXT" name="LABEL" value="LoadContextFromFile"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+    </node>
+    <node componentName="PrintContextToLog" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="768">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="PrintContextToLog_1"/>
+      <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+      <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+      <elementParameter field="CHECK" name="DUMMY" show="false" value="false"/>
+      <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+      <elementParameter field="CHECK" name="START" show="false" value="false"/>
+      <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+      <elementParameter field="CLOSED_LIST" name="TRIGGER_INPUT_1" value="SUBJOB_OK"/>
+      <elementParameter field="COMPONENT_LIST" name="TRIGGER_INPUT_1:COMPONENT_LIST" value="tWarn_2"/>
+      <elementParameter field="TEXT" name="LABEL" value="PrintContextToLog"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+    </node>
+    <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="TRIGGER_INPUT_1" offsetLabelX="0" offsetLabelY="0" source="TRIGGER_INPUT_1" target="tJava_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+    </connection>
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="TRIGGER_INPUT_2" offsetLabelX="0" offsetLabelY="0" source="TRIGGER_INPUT_2" target="tJava_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
+    </connection>
+    <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tJava_2">
+      <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.loadContextInJob"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If1"/>
+    </connection>
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="TRIGGER_OUTPUT_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
+    </connection>
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" source="tJava_2" target="tJava_3">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk3"/>
+    </connection>
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" source="tJava_3" target="tJava_4">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk4"/>
+    </connection>
+    <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" source="tJava_3" target="tWarn_1">
+      <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.contextStorageType.equals(&quot;File&quot;)"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If2"/>
+    </connection>
+    <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_4" offsetLabelX="0" offsetLabelY="0" source="tJava_4" target="tWarn_2">
+      <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.printContextVariableValues"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If3"/>
+    </connection>
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tWarn_1" offsetLabelX="0" offsetLabelY="0" source="tWarn_1" target="LoadContextFromFile_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk5"/>
+    </connection>
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tWarn_2" offsetLabelX="0" offsetLabelY="0" source="tWarn_2" target="PrintContextToLog_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk6"/>
+    </connection>
+    <note opaque="true" posX="96" posY="0" sizeHeight="161" sizeWidth="641" text="Version: 1.0&#13;&#10;Description:&#13;&#10;&#13;&#10;This is the main LoadContext Joblet that developers should add in their PreJob section to load their context variables.&#13;&#10;It will either load the context variables from File or from DB.&#13;&#10;&#13;&#10;If the contextStorageType variable is initialised with an empty of wrong value, then it will be reset to &quot;File&quot; &#13;&#10;to force loading the context variables from properties file.">
+      <elementParameter field="COLOR" name="NOTE_COLOR" value="237;201;122"/>
+    </note>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="TRIGGER_INPUT_1"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="TRIGGER_INPUT_2"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_2"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="TRIGGER_OUTPUT_1"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_3"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_4"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_1"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_2"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="LoadContextFromFile_1"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="PrintContextToLog_1"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <jobletNodes componentName="TRIGGER_INPUT" componentVersion="0.1" input="true" offsetLabelX="0" offsetLabelY="0" posX="128" posY="224" trigger="true">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="TRIGGER_INPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+      <elementParameter field="CHECK" name="START" show="false" value="true"/>
+      <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;OnComponentOK&lt;/b&gt;&lt;br&gt;"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+    </jobletNodes>
+    <jobletNodes componentName="TRIGGER_INPUT" componentVersion="0.1" input="true" offsetLabelX="0" offsetLabelY="0" posX="416" posY="224" trigger="true">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="TRIGGER_INPUT_2"/>
+      <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+      <elementParameter field="CHECK" name="START" show="false" value="true"/>
+      <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;OnSubjobOK&lt;/b&gt;&lt;br&gt;"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+    </jobletNodes>
+    <jobletNodes componentName="TRIGGER_OUTPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="288" posY="864" trigger="true">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="TRIGGER_OUTPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+      <elementParameter field="CHECK" name="START" show="false" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+    </jobletNodes>
+  </model:JobletProcess>
+  <TalendProperties:ByteArray/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_4f7ea038-dd22-4d0c-aea2-e93a94c89175"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>kRmN07oqXYO8WNM4Tv1gDSESl53aB7hFJhpTMDXMipw/EO+B93E1vYH6VfmJxQMAc7IN2d6NDk1S&#13;
+9UYt1pJsBQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_3c0200f9-a0f7-4576-8049-00407b88178d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>KzVbmTK0Zl3njYLbz9g7lnzEXGDG5ve+rjkq2R8d9GyX20bMc5cQcj2QbuX5HZJ3RHKOXBpG4qNp&#13;
+2k6TxIgwHw==</DigestValue></Reference></SignedInfo><SignatureValue>XA0Jd865m+Y94UYGl6FJGqkaoMOE6fYzB0dYtx/B8e3bPjURL9rxnl6/HulFS4LYP8AXSHXoPGcS&#13;
+HwAcE/cB3dfMSAHsUe9NgxRMVvUw7PyrgNuFAzFJ1HR7TUZpWopKL9lAwJk2UsGomywHNWAiVQdr&#13;
+th/7YaVVYD5EpEf8jgcyYKkPZbMS11vK9W8iUWmgNOWiyg80hEK3IT7M3VIVsMTPeAvgFTKWvqJT&#13;
+1g7H52411+5gMDasNJLnuwe8I7DZwce9X1qGeNgYObHnV8Ri/zENGgdO6EL+qxFlr5NU0IrcHZ/d&#13;
+DJBCnJ2kefK7eeJU5MCfgmjl4IGxsL6Z2ow0IA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_3c0200f9-a0f7-4576-8049-00407b88178d" Target="#_4f7ea038-dd22-4d0c-aea2-e93a94c89175"><Timestamp>2024-08-05 17:54:02</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

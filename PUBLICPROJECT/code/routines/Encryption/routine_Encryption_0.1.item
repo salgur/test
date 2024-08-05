@@ -1,0 +1,106 @@
+package routines;
+
+import javax.xml.bind.DatatypeConverter;
+
+import org.jasypt.encryption.pbe.StandardPBEByteEncryptor;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Enumeration;
+import java.util.Properties;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class routine_Encryption {
+
+	static StandardPBEByteEncryptor  encryptor;
+	static String key;
+	
+	public static void init(String filepath){
+		encryptor = new StandardPBEByteEncryptor();
+		encryptor.setAlgorithm("PBEWithMD5AndTripleDES");
+		
+		try {
+			File file = new File(filepath);
+			FileInputStream fileInput = new FileInputStream(file);
+			
+			
+			Properties properties = new Properties();
+			properties.load(fileInput);
+			fileInput.close();
+			
+			key = new StringBuilder(properties.getProperty("key")).toString();//.reverse().toString();
+			
+			encryptor.setPassword(key);
+			
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+			System.out.println("File " + filepath + " Not found! - Set default seed");
+			encryptor.setPassword("defaultsecretpassword");
+		} catch (IOException e) {
+			e.printStackTrace();
+			System.out.println("File " + filepath + " IO Exception! - Set default Seed");
+			encryptor.setPassword("defaultsecretpassword");
+		}
+	}
+
+	 /**
+     * Converts an unencrypted value in an encrypted one using Jasypt encryptionlibrary
+     *
+     * {talendTypes} String | String
+     *
+     * {Category} StringHandling
+     *
+     * {param} String value: String value
+     *
+     * {example} secretpassword=ENC(x1387yx=)
+     *
+     */
+    public static String encrypt (String message) {
+
+    	return ("ENC("+ DatatypeConverter.printBase64Binary(encryptor.encrypt(message.getBytes())) + ")").replace("=", ";");
+ 
+    }
+    
+    /**
+     * Converts an encrypted value in an unencrypted one using Jasypt encryptionlibrary
+     *
+     * {talendTypes} String | String
+     *
+     * {Category} StringHandling
+     *
+     * {param} String value: String value
+     *
+     * {example} ENC(x1387yx=):secretpassword
+     *
+     */
+    public static String decrypt (String message) {
+
+    	//String encrypted = message.substring(4, message.length()-1);    	No Index out of bounds safe
+    	if (message.startsWith("ENC("))
+    		System.out.println("We are decrypting " + message);
+    	else
+    		System.out.println("We are NOT decrypting " + message);
+    	return message.startsWith("ENC(") ?  new String(encryptor.decrypt(DatatypeConverter.parseBase64Binary(message.replace(";", "=").substring(4, message.length()-1)))) : message;
+ 
+    }
+    
+}

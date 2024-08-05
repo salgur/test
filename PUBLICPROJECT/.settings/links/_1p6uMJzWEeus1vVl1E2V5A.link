@@ -1,0 +1,189 @@
+{
+  "itemId" : "_1p6uMJzWEeus1vVl1E2V5A",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_NvoUgJzYEeus1vVl1E2V5A",
+    "parameterList" : [ {
+      "id" : "_nBOUkJzYEeus1vVl1E2V5A",
+      "name" : "contextSeedPath"
+    }, {
+      "id" : "_nBOUkZzYEeus1vVl1E2V5A",
+      "name" : "contextStorageType"
+    }, {
+      "id" : "_nBOUkpzYEeus1vVl1E2V5A",
+      "name" : "enableJobLevelContextFileLoad"
+    }, {
+      "id" : "_nBOUk5zYEeus1vVl1E2V5A",
+      "name" : "enableProjectLevelContextFileLoad"
+    }, {
+      "id" : "_nBOUlJzYEeus1vVl1E2V5A",
+      "name" : "enableTaskLevelContextFileLoad"
+    }, {
+      "id" : "_nBOUlZzYEeus1vVl1E2V5A",
+      "name" : "environment"
+    }, {
+      "id" : "_nBOUlpzYEeus1vVl1E2V5A",
+      "name" : "loadContextInJob"
+    }, {
+      "id" : "_nBOUl5zYEeus1vVl1E2V5A",
+      "name" : "printContextVariableValues"
+    }, {
+      "id" : "_nBOUmJzYEeus1vVl1E2V5A",
+      "name" : "resource_directory_contextFiles"
+    }, {
+      "id" : "_nBOUmZzYEeus1vVl1E2V5A",
+      "name" : "taskName"
+    }, {
+      "id" : "_nBOUmpzYEeus1vVl1E2V5A",
+      "name" : "tMapTempDirPath"
+    } ]
+  }, {
+    "contextName" : "Test",
+    "repoId" : "_NvoUgJzYEeus1vVl1E2V5A",
+    "parameterList" : [ {
+      "id" : "_nBOUm5zYEeus1vVl1E2V5A",
+      "name" : "contextSeedPath"
+    }, {
+      "id" : "_nBOUnJzYEeus1vVl1E2V5A",
+      "name" : "contextStorageType"
+    }, {
+      "id" : "_nBOUnZzYEeus1vVl1E2V5A",
+      "name" : "enableJobLevelContextFileLoad"
+    }, {
+      "id" : "_nBOUnpzYEeus1vVl1E2V5A",
+      "name" : "enableProjectLevelContextFileLoad"
+    }, {
+      "id" : "_nBOUn5zYEeus1vVl1E2V5A",
+      "name" : "enableTaskLevelContextFileLoad"
+    }, {
+      "id" : "_nBOUoJzYEeus1vVl1E2V5A",
+      "name" : "environment"
+    }, {
+      "id" : "_nBOUoZzYEeus1vVl1E2V5A",
+      "name" : "loadContextInJob"
+    }, {
+      "id" : "_nBOUopzYEeus1vVl1E2V5A",
+      "name" : "printContextVariableValues"
+    }, {
+      "id" : "_nBOUo5zYEeus1vVl1E2V5A",
+      "name" : "resource_directory_contextFiles"
+    }, {
+      "id" : "_nBOUpJzYEeus1vVl1E2V5A",
+      "name" : "taskName"
+    }, {
+      "id" : "_nBOUpZzYEeus1vVl1E2V5A",
+      "name" : "tMapTempDirPath"
+    } ]
+  }, {
+    "contextName" : "Production",
+    "repoId" : "_NvoUgJzYEeus1vVl1E2V5A",
+    "parameterList" : [ {
+      "id" : "_nBOUppzYEeus1vVl1E2V5A",
+      "name" : "contextSeedPath"
+    }, {
+      "id" : "_nBOUp5zYEeus1vVl1E2V5A",
+      "name" : "contextStorageType"
+    }, {
+      "id" : "_nBOUqJzYEeus1vVl1E2V5A",
+      "name" : "enableJobLevelContextFileLoad"
+    }, {
+      "id" : "_nBOUqZzYEeus1vVl1E2V5A",
+      "name" : "enableProjectLevelContextFileLoad"
+    }, {
+      "id" : "_nBOUqpzYEeus1vVl1E2V5A",
+      "name" : "enableTaskLevelContextFileLoad"
+    }, {
+      "id" : "_nBOUq5zYEeus1vVl1E2V5A",
+      "name" : "environment"
+    }, {
+      "id" : "_nBOUrJzYEeus1vVl1E2V5A",
+      "name" : "loadContextInJob"
+    }, {
+      "id" : "_nBOUrZzYEeus1vVl1E2V5A",
+      "name" : "printContextVariableValues"
+    }, {
+      "id" : "_nBOUrpzYEeus1vVl1E2V5A",
+      "name" : "resource_directory_contextFiles"
+    }, {
+      "id" : "_nBOUr5zYEeus1vVl1E2V5A",
+      "name" : "taskName"
+    }, {
+      "id" : "_nBOUsJzYEeus1vVl1E2V5A",
+      "name" : "tMapTempDirPath"
+    } ]
+  }, {
+    "contextName" : "Development",
+    "repoId" : "_NvoUgJzYEeus1vVl1E2V5A",
+    "parameterList" : [ {
+      "id" : "_nBOUsZzYEeus1vVl1E2V5A",
+      "name" : "contextSeedPath"
+    }, {
+      "id" : "_nBOUspzYEeus1vVl1E2V5A",
+      "name" : "contextStorageType"
+    }, {
+      "id" : "_nBOUs5zYEeus1vVl1E2V5A",
+      "name" : "enableJobLevelContextFileLoad"
+    }, {
+      "id" : "_nBOUtJzYEeus1vVl1E2V5A",
+      "name" : "enableProjectLevelContextFileLoad"
+    }, {
+      "id" : "_nBOUtZzYEeus1vVl1E2V5A",
+      "name" : "enableTaskLevelContextFileLoad"
+    }, {
+      "id" : "_nBOUtpzYEeus1vVl1E2V5A",
+      "name" : "environment"
+    }, {
+      "id" : "_nBOUt5zYEeus1vVl1E2V5A",
+      "name" : "loadContextInJob"
+    }, {
+      "id" : "_nBOUuJzYEeus1vVl1E2V5A",
+      "name" : "printContextVariableValues"
+    }, {
+      "id" : "_nBOUuZzYEeus1vVl1E2V5A",
+      "name" : "resource_directory_contextFiles"
+    }, {
+      "id" : "_nBOUupzYEeus1vVl1E2V5A",
+      "name" : "taskName"
+    }, {
+      "id" : "_nBOUu5zYEeus1vVl1E2V5A",
+      "name" : "tMapTempDirPath"
+    } ]
+  }, {
+    "contextName" : "Perf",
+    "repoId" : "_NvoUgJzYEeus1vVl1E2V5A",
+    "parameterList" : [ {
+      "id" : "_nBOUvJzYEeus1vVl1E2V5A",
+      "name" : "contextSeedPath"
+    }, {
+      "id" : "_nBOUvZzYEeus1vVl1E2V5A",
+      "name" : "contextStorageType"
+    }, {
+      "id" : "_nBOUvpzYEeus1vVl1E2V5A",
+      "name" : "enableJobLevelContextFileLoad"
+    }, {
+      "id" : "_nBOUv5zYEeus1vVl1E2V5A",
+      "name" : "enableProjectLevelContextFileLoad"
+    }, {
+      "id" : "_nBOUwJzYEeus1vVl1E2V5A",
+      "name" : "enableTaskLevelContextFileLoad"
+    }, {
+      "id" : "_nBOUwZzYEeus1vVl1E2V5A",
+      "name" : "environment"
+    }, {
+      "id" : "_nBOUwpzYEeus1vVl1E2V5A",
+      "name" : "loadContextInJob"
+    }, {
+      "id" : "_nBOUw5zYEeus1vVl1E2V5A",
+      "name" : "printContextVariableValues"
+    }, {
+      "id" : "_nBOUxJzYEeus1vVl1E2V5A",
+      "name" : "resource_directory_contextFiles"
+    }, {
+      "id" : "_nBOUxZzYEeus1vVl1E2V5A",
+      "name" : "taskName"
+    }, {
+      "id" : "_nBOUxpzYEeus1vVl1E2V5A",
+      "name" : "tMapTempDirPath"
+    } ]
+  } ]
+}
